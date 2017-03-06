@@ -4,6 +4,7 @@ branches:
   only:
     - master
     - serviceDiscoveryTest
+    - kongTest
     - /^\d+\.\d+\.x$/ # release forked patches branch
 
 language: python

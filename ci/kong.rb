@@ -56,7 +56,7 @@ namespace :ci do
     task install: ['ci:common:install'] do
       unless File.exist? cassandra_bin
         sh %(curl -s -S -L -o $VOLATILE_DIR/apache-cassandra-2.2.8-bin.tar.gz\
-          http://apache.trisect.eu/cassandra/2.2.8/apache-cassandra-2.2.8-bin.tar.gz)
+          https://archive.apache.org/dist/cassandra/2.2.8/apache-cassandra-2.2.8-bin.tar.gz)
         sh %(mkdir -p #{cassandra_rootdir})
         sh %(tar zxf $VOLATILE_DIR/apache-cassandra-2.2.8-bin.tar.gz\
           -C #{cassandra_rootdir} --strip-components=1)
