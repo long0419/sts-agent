@@ -1,3 +1,6 @@
+# Needed for the kong tests, due to
+# https://github.com/hashicorp/serf/issues/437
+dist: trusty
 sudo: false
 
 branches:
