@@ -80,7 +80,8 @@ env:
     - TRAVIS_FLAVOR=redis FLAVOR_VERSION=2.8.19
 # Compilation takes too much time on Travis
 #   - TRAVIS_FLAVOR=riak
-    - TRAVIS_FLAVOR=snmp
+# Does not currently work and upstream works differently...
+#   - TRAVIS_FLAVOR=snmp
     - TRAVIS_FLAVOR=ssh
     - TRAVIS_FLAVOR=supervisord
     - TRAVIS_FLAVOR=system
