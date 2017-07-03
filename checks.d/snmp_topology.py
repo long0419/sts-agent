@@ -92,6 +92,8 @@ class SnmpTopologyCheck(AgentCheck):
             remote_address_oid = self.MIB_tcpConnRemAddress + stripped_oid
             remote_port_oid = self.MIB_tcpConnRemPort + stripped_oid
 
+            # TODO investigate whether we can derive incoming and outgoing connections from local and remote ips.
+
             # TODO split off
             iter = getCmd(self.snmp_engine,
                           CommunityData(community_string),
